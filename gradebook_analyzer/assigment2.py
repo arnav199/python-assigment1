@@ -1,3 +1,6 @@
+#Name:Arnav Kapil
+#Roll.no:2500730045
+#Date:22/10/2025
 print("\n===== GradeBook Analyzer =====")
 print("1. Manual Input")
 print("2. CSV Input (name,marks)")
@@ -81,3 +84,4 @@ for name in marks:
     print(f"{name}\t\t{marks[name]}\t{grades[name]}")
 
 print("\nAnalysis complete!")
+

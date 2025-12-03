@@ -1,5 +1,4 @@
-# library_manager/inventory.py
-# Simple inventory manager using JSON file for storage
+
 
 import json
 import os
@@ -22,14 +21,14 @@ class LibraryInventory:
             with open(self.json_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             for item in data:
-                # make sure required keys exist
+         
                 title = item.get("title", "")
                 author = item.get("author", "")
                 isbn = item.get("isbn", "")
                 status = item.get("status", "available")
                 self.books.append(Book(title, author, isbn, status))
         except Exception:
-            # if file is bad, start with empty list
+       
             self.books = []
 
     def save(self):
@@ -77,3 +76,4 @@ class LibraryInventory:
         book.return_book()
         self.save()
         return book
+

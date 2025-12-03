@@ -1,5 +1,4 @@
-# cli/main.py
-# Very basic menu-driven CLI (works with simple Python)
+
 
 import sys
 from library_manager.inventory import LibraryInventory
@@ -19,7 +18,7 @@ def print_books(books):
         print("-", b)
 
 def main():
-    inv = LibraryInventory()  # uses catalog.json in current folder
+    inv = LibraryInventory() 
 
     while True:
         print("\nLibrary Inventory Manager")
@@ -84,3 +83,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,12 +1,11 @@
-# library_manager/book.py
-# Very simple Book class
+
 
 class Book:
     def __init__(self, title, author, isbn, status="available"):
         self.title = title
         self.author = author
         self.isbn = isbn
-        self.status = status  # "available" or "issued"
+        self.status = status 
 
     def __str__(self):
         return self.title + " by " + self.author + " (ISBN: " + self.isbn + ") - " + self.status
@@ -31,3 +30,4 @@ class Book:
         if self.status == "available":
             raise ValueError("Book is not issued")
         self.status = "available"
+
